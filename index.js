@@ -6,12 +6,6 @@ var router = express.Router();
 const PORT = process.env.PORT || 5000
 const app = express()
 
-const { Pool } = require('pg');
-const pool = new Pool({
-  connectionString: process.env.DATABASE_URL,
-  ssl: true
-});
-
 app.use(express.static(__dirname + '/public'));
 
 
